@@ -18,25 +18,21 @@
             <header>
                 <h1><xsl:value-of select="/portfolio/rdf:RDF/rdf:Description/dc:title"/></h1>
             </header>
-            <section id="video">
-                <h2><xsl:choose>
-                    <xsl:when test="$lang='en'">Video</xsl:when>
-                    <xsl:when test="$lang='fr'">Vidéo</xsl:when>
-                    <xsl:when test="$lang='zh'">视频</xsl:when>
-                </xsl:choose></h2>
-                <video controls>
-                    <source src="{video.mp4}" type="video/mp4"/>
-                    <track label="English" kind="subtitles" srclang="en" src="{english_subtitles.vtt}" default="{$lang='en'}"/>
-                    <track label="Français" kind="subtitles" srclang="fr" src="{french_subtitles.vtt}" default="{$lang='fr'}"/>
-                    <track label="中文" kind="subtitles" srclang="zh" src="{chinese_subtitles.vtt}" default="{$lang='zh'}"/>
-                </video>
-            </section>
-            <xsl:for-each select="/portfolio/content/sections/section">
-                <section id="{@id}">
-                    <h2><xsl:value-of select="title/*[local-name()=$lang]"/></h2>
-                    <p><xsl:value-of select="content/*[local-name()=$lang]"/></p>
-                </section>
-            </xsl:for-each>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="switchLanguage('en')">English</a></li>
+                    <li><a href="#" onclick="switchLanguage('fr')">Français</a></li>
+                    <li><a href="#" onclick="switchLanguage('zh')">中文</a></li>
+                </ul>
+            </nav>
+            <div id="content">
+                <xsl:for-each select="/portfolio/content/sections/section">
+                    <section id="{@id}">
+                        <h2><xsl:value-of select="title/*[local-name()=$lang]"/></h2>
+                        <p><xsl:value-of select="content/*[local-name()=$lang]"/></p>
+                    </section>
+                </xsl:for-each>
+            </div>
         </body>
         </html>
     </xsl:template>
