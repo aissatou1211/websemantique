@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portfolio>
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <rdf:Description rdf:about="http://yourportfolio.com">
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Multilingual Portfolio</dc:title>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aissatou GUEYE</dc:creator>
+      <dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">A portfolio showcasing my projects in multiple languages</dc:description>
+      <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">en, fr, zh</dc:language>
+    </rdf:Description>
+  </rdf:RDF>
+  
+  <content>
+    <video>
+      <url>video.mp4</url>
+      <subtitles>
+        <en>english_subtitles.vtt</en>
+        <fr>french_subtitles.vtt</fr>
+        <zh>chinese_subtitles.vtt</zh>
+      </subtitles>
+    </video>
+    <sections>
+      <section id="about">
+        <title>
+          <en>About Me</en>
+          <fr>À propos de moi</fr>
+          <zh>关于我</zh>
+        </title>
+        <content>
+          <en>I am a passionate developer...</en>
+          <fr>Je suis un développeur passionné...</fr>
+          <zh>我是一名充满激情的开发者...</zh>
+        </content>
+      </section>
+      <!-- Add more sections for projects and contact -->
+    </sections>
+  </content>
+</portfolio>
