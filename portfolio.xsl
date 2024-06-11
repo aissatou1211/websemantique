@@ -5,7 +5,7 @@
     
     <xsl:output method="html" encoding="UTF-8" indent="yes"/>
     
-    <xsl:param name="lang" select="'en'"/>
+    <xsl:param name="lang" select="'fr'"/>
     
     <xsl:template match="/">
         <html lang="{$lang}">
@@ -20,8 +20,8 @@
             </header>
             <nav>
                 <ul>
-                    <li><a href="#" onclick="switchLanguage('en')">English</a></li>
                     <li><a href="#" onclick="switchLanguage('fr')">Français</a></li>
+                    <li><a href="#" onclick="switchLanguage('en')">English</a></li>
                     <li><a href="#" onclick="switchLanguage('zh')">中文</a></li>
                 </ul>
             </nav>

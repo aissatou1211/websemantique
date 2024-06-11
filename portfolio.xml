@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<portfolio>
-  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <rdf:Description rdf:about="http://yourportfolio.com">
-      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Multilingual Portfolio</dc:title>
-      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">GUEYE Aïssatou</dc:creator>
-      <dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">A portfolio showcasing my projects in multiple languages</dc:description>
-      <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">en, fr, zh</dc:language>
+<portfolio xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:RDF>
+    <rdf:Description rdf:about="http://votreportfolio.com">
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Portfolio Multilingue</dc:title>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Votre Nom</dc:creator>
+      <dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Un portfolio présentant mes projets en plusieurs langues</dc:description>
+      <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">fr, en, zh</dc:language>
     </rdf:Description>
   </rdf:RDF>
   
@@ -13,38 +13,38 @@
     <sections>
       <section id="about">
         <title>
-          <en>About Me</en>
           <fr>À propos de moi</fr>
+          <en>About Me</en>
           <zh>关于我</zh>
         </title>
         <content>
+          <fr>Bonjour, je m'appelle Aissatou, j'ai 21 ans et je suis apprentie ingénieur informatique à l'institut Galilée de l'université Sorbonne Paris Nord.</fr>
           <en>Hello, my name is Aissatou, I am 21 years old, and I am an apprentice computer engineer at the Galilée Institute of Sorbonne Paris North University.</en>
-          <fr>Bonjour, je m'appelle Aissatou, j'ai 21 ans et je suis apprentie ingénieure informatique à l'institut Galilée de l'université Sorbonne Paris Nord.</fr>
           <zh>你好，我叫艾萨图，今年21岁，我是巴黎北索邦大学加利利学院的计算机工程师学徒。</zh>
         </content>
       </section>
       <section id="projects">
         <title>
-          <en>Projects</en>
           <fr>Projets</fr>
+          <en>Projects</en>
           <zh>项目</zh>
         </title>
         <content>
-          <en>Here are some of my projects.</en>
           <fr>Voici quelques-uns de mes projets.</fr>
+          <en>Here are some of my projects.</en>
           <zh>这是我的一些项目。</zh>
         </content>
       </section>
       <section id="contact">
         <title>
-          <en>Contact</en>
           <fr>Contact</fr>
+          <en>Contact</en>
           <zh>联系</zh>
         </title>
         <content>
-          <en>You can contact me at the following email address: gueyeaissatou1211@gmail.com</en>
-          <fr>Vous pouvez me contacter à l'adresse suivante : gueyeaissatou1211@gmail.com</fr>
-          <zh>您可以通过以下电子邮件地址与我联系: gueyeaissatou1211@gmail.com</zh>
+          <fr>Vous pouvez me contacter à l'adresse suivante : example@example.com</fr>
+          <en>You can contact me at the following email address: example@example.com</en>
+          <zh>您可以通过以下电子邮件地址与我联系: example@example.com</zh>
         </content>
       </section>
     </sections>

@@ -1,10 +1,10 @@
 function switchLanguage(lang) {
     var xsl = new XMLHttpRequest();
-    xsl.open("GET", "transform.xsl", true);
+    xsl.open("GET", "portfolio.xsl", true);
     xsl.onreadystatechange = function() {
         if (xsl.readyState === 4 && xsl.status === 200) {
             var xml = new XMLHttpRequest();
-            xml.open("GET", "content.xml", true);
+            xml.open("GET", "portfolio.xml", true);
             xml.onreadystatechange = function() {
                 if (xml.readyState === 4 && xml.status === 200) {
                     var xsltProcessor = new XSLTProcessor();
